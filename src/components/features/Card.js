@@ -1,5 +1,5 @@
 import React from "react";
-import { HiArrowRight } from "react-icons/hi";
+// import { HiArrowRight } from "react-icons/hi";
 
 const Card = ({ title, des, icon }) => {
   return (
@@ -23,9 +23,9 @@ const Card = ({ title, des, icon }) => {
               {title}
             </h2>
             {/* <p className="base">{des}</p> */}
-            <span className="text-2xl text-designColor">
+            {/* <span className="text-2xl text-designColor">
               <HiArrowRight />
-            </span>
+            </span> */}
           </div>
         </div>
       </div>

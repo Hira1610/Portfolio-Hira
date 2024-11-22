@@ -20,42 +20,27 @@ const Experience = () => {
 
           {/* Resume Cards */}
           <ResumeCard
-            title="Senior Software Engineer"
-            subTitle="Bain & Company - 07-2016 "
-            des="Designed and implemented 5+ scalable, high-performance web
-applications using JavaScript, React, Node.js, Express, and MongoDB
-Delivered seamless integration between frontend and backend
-components, ensuring data flow efficiency across 100% of applications
-Migrated applications from React to Next.js, increasing load speed by
-20%
-Developed 10+ serverless backend APIs using AWS Lambda and
-GraphQL, improving scalability and cost-efficiency
-Leveraged AWS services like EC2, S3, and CloudFront for
-infrastructure, ensuring rapid deployment and efficient content
-delivery for 20+ projects
-Built and deployed 5+ microservices using Node.js, Express, and
-Docker, orchestrated with Kubernetes
-Automated deployment workflows using Jenkins and
-GitLab CI/CD pipelines, ensuring smooth integration and faster release
-cycles by 30%
-Established continuous monitoring and logging with Datadog,
-improving response time to incidents by 40%
-Optimized database performance by designing scalable PostgreSQL's
-schemas and implementing advanced indexing and partitioning
-strategies for 10+ databases
-Enhanced query efficiency, reducing latency by 35%
-Developed RESTful and GraphQL API endpoints using Node.js,
-ensuring efficient communication with front-end applications
-Connected 20 cryptocurrency exchange APIs for real-time data
-processing using Axios
-Containerized applications using Docker for consistent development
-environments across 5+ teams
-Set up performance dashboards using Datadog and AWS
-CloudWatch, reducing performance bottlenecks and optimizing
-server-side processing times by 25%
-Ensured high test coverage with comprehensive unit and integration
-tests using Jest and Cypress, achieving over 90% coverage
-"
+            title="Junior Software Engineer"
+            subTitle="Devinity Solutions | 2024 "
+            result="Completed"
+            des={
+              <ul className="list-disc pl-5 space-y-2">
+                <li>I worked on their Management System Project and contributed to multiple other projects. My primary responsibilities included developing and maintaining user-friendly interfaces, ensuring responsive designs, and implementing real-time functionalities.</li>
+                <li>Built dynamic and reusable components to create scalable user interfaces.</li>
+                <li>Designed modern, accessible, and responsive layouts.</li>
+                <li>Ensured type safety and maintainability in the codebase.</li>
+                <li>Integrated real-time communication features for enhanced user interaction.</li>
+                <li>Applied utility-first styling to create consistent and elegant designs.</li>
+                <li>Enhanced interactivity and implemented core application logic.</li>
+                <li>Managed global state for seamless data flow across components.</li>
+                <li>Developed core features for the management system, including user dashboards, analytics, and notifications.</li>
+                <li>Collaborated with backend engineers to integrate WebSockets (Socket.io) for realtime features like chat and notifications.</li>
+                <li>Improved project performance and responsiveness by optimizing components and layouts.</li>
+                <li>Collaborated with the team to troubleshoot and resolve issues, ensuring timely project delivery.</li>
+                <li>Implemented role-based access control and real-time updates to enhance system functionality.</li>
+              </ul>
+            }
+            
           />
           {/* Add more ResumeCards as needed */}
         </div>

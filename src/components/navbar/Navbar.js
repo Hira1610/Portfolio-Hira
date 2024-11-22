@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+// import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { logo } from "../../assets/index";
 import { navLinksdata } from "../../constants";
 
@@ -16,15 +16,16 @@ const Navbar = () => {
           alt="logo"
           className="w-28 h-auto top-2 lg:w-24 lg:h-auto sm:w-20 sm:h-auto" // Adjusted size for different viewports
         />
-        <h1 className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300">
-          BAHATI BASESELA
-        </h1>
+       <h1 className="hidden md:block text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300">
+  HIRA FAYYAZ
+</h1>
+
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-8 lg:gap-12">
           {navLinksdata.map(({ _id, title, link }) => (
             <li
-              className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
+              className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300 mr-4"
               key={_id}
             >
               <Link
@@ -42,7 +43,7 @@ const Navbar = () => {
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}
-          className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
+          className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointe mr-4"
         >
           <FiMenu />
         </span>

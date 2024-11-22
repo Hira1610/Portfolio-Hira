@@ -1,10 +1,10 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { SiMongodb, SiNextdotjs, SiReact, SiTypescript } from "react-icons/si";
+import { SiBootstrap, SiFigma, SiNextdotjs, SiReact } from "react-icons/si";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Senior Software Engineer.", "MERN Stack Developer."],
+    words: [" Software Engineer.", "ReactJS Developer.","UI/UX Developer."],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -15,16 +15,19 @@ const LeftBanner = () => {
     <div className="flex flex-col gap-5 sm:mt-6"> {/* Added sm:mt-6 for small screens */}
       <h4 className="text-lg font-normal">WELCOME TO MY WORLD</h4>
       <h1 className="text-6xl md:text-5xl sm:text-4xl font-bold text-white">
-        Hi, I'm <span className="text-designColor capitalize">BAHATI BASESELA</span>
+        Hi, I'm <span className="bg-gradient-to-r from-[#ce4257] to-[#4c7cf5] bg-clip-text text-transparent">HIRA </span>
       </h1>
 
   
         <h2 className="text-4xl md:text-3xl sm:text-2xl font-bold text-white"> {/* Responsive text */}
-          a <span>{text}</span>
+          a <span className="bg-gradient-to-r from-[#ce4257] to-[#4c7cf5] bg-clip-text text-transparent">
+  {text}
+</span>
+
           <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="#ff014f" />
         </h2>
         <p className="text-base font-bodyFont font-normal leading-7 tracking-wide">
-          Seasoned MERN stack expert with an impressive 8-year track record of developing scalable, high-performance web applications. Proficient in leveraging MongoDB, Express.js, React.js, and Node.js to deliver seamless user experiences and robust back-end solutions. Proven ability to collaborate cross-functionally and drive project success while employing best practices in coding, testing, and deployment.
+  Junior MERN Stack Developer with 3 Months of Hands-On Experience in building scalable, high-performance web applications. Skilled in utilizing MongoDB, React.js, and Node.js to create engaging user interfaces and reliable back-end systems. Demonstrated ability to learn quickly, adapt to new technologies, and collaborate effectively within a team to achieve project goals. Eager to continue growing expertise in best practices for coding, testing, and deployment.
         </p>
 
       </div>
@@ -42,15 +45,14 @@ const LeftBanner = () => {
               <SiNextdotjs />
             </span>
             <span className="bannerIcon">
-              <SiTypescript />
+              <SiFigma />
             </span>
             <span className="bannerIcon">
-              <SiMongodb />
+              <SiBootstrap />
             </span>
           </div>
         </div>
       </div>
-   
   );
 };
 
