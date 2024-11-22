@@ -45,16 +45,16 @@ const Contact = () => {
 
       emailjs
         .send(
-          "service_lpkebwj", // ServiceID
-          "template_8yr7fse", // TemplateID
+          "service_9zerckv", // ServiceID
+          "template_exruign", // TemplateID
           {
             from_name: form.name,
-            to_name: "Adam", // Fixed recipient name
+            to_name: "Hira", // Fixed recipient name
             from_email: form.email,
-            to_email: "adamcodebox@gmail.com", // Fixed recipient email
+            to_email: "hira97122@gmail.com", // Fixed recipient email
             message: form.message,
           },
-          "Fyl5cuZte3VAl1RJi" // Public Key
+          "gmtnOmMTHLrZvzw3n" // Public Key
         )
         .then(
           () => {

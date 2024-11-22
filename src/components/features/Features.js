@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 import React from "react";
 // import { AiFillAppstore } from "react-icons/ai";
 // import { FaMobile, FaGlobe } from "react-icons/fa";
@@ -8,13 +9,13 @@ import {
   FaNodeJs,
   FaJs,
   FaGithub,
-  FaDocker,
   FaHtml5,
-  FaCss3,
-  FaAws,
 } from "react-icons/fa";
 // import { SiJira } from "react-icons/si";
-import { SiTypescript, SiMongodb, SiExpress ,SiMysql,SiKubernetes,SiNextdotjs} from "react-icons/si";
+import { SiMongodb, SiMysql,SiNextdotjs,SiCss3} from "react-icons/si";
+// eslint-disable-next-line no-unused-vars
+import {figma} from "../../assets/index";
+
 
 // import { SiPhotoshop, SiFigma, SiAdobe } from 'react-icons/si';
 // import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaAdobe } from 'react-icons/fa';
@@ -29,25 +30,17 @@ const Features = () => {
     >
       <Title title="Skills" des="What I Do" />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
-        <Card title="HTML" icon={<FaHtml5 />} />
-        <Card title="CSS" icon={<FaCss3 />} />
+      <Card title="HTML" icon={<FaHtml5 className="text-red-600" />} />
+      <Card title="CSS3" icon={<SiCss3 className="text-blue-600" />} />
+<Card title="JavaScript" icon={<FaJs className="text-yellow-500" />} />
+<Card title="React Js" icon={<FaReact className="text-blue-500" />} />
+<Card title="Node Js" icon={<FaNodeJs className="text-green-600" />} />
+<Card title="Next.JS" icon={<SiNextdotjs className="text-white" />} />
+<Card title="Figma" icon={<img src={figma} alt="Figma" className=" h-20 w-20" />} />
+<Card title="My Sql" icon={<SiMysql className="text-[#00618C]" />} />
+<Card title="MongoDB" icon={<SiMongodb className="text-green-700" />} />
+<Card title="GitHub" icon={<FaGithub className="text-white" />} />
 
-        <Card title="JavaScript" icon={<FaJs />} />
-        <Card title="React Js" icon={<FaReact />} />
-        <Card title="TypeScript" icon={<SiTypescript />} />
-        <Card title="Nods Js" icon={<FaNodeJs />} />
-        {/* <Card title="Trello" icon={<SiTrello />} /> */}
-
-        <Card title="MongoDB" icon={<SiMongodb />} />
-        <Card title="Kubernetes" icon={<SiKubernetes />} />
-        <Card title="Next.JS" icon={<SiNextdotjs />} />
-
-        <Card title="Express JS" icon={<SiExpress />} />
-        <Card title="My Sql" icon={<SiMysql />} />
-        <Card title="GitHub" icon={<FaGithub />} />
-        <Card title="Docker" icon={<FaDocker />} />
-
-        <Card title="AWS" icon={<FaAws />} />
         {/* <Card title="Jira" icon={<SiJira />} /> */}
 
       </div>

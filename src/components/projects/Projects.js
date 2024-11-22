@@ -17,19 +17,18 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="Spearheaded a $12M software project"
-          des=" From design to distribution as a senior software engineer in a 12people team."
+          title="Nike Landing Page"
+          des=" I created a Nike landing page using React and Tailwind CSS. The project features a fully responsive layout that adjusts perfectly to all screen sizes. "
           src={projectOne}
         />
         <ProjectsCard
-          title="30% improved query efficiency"
-          des="By designing and fully revising a large MySQL database"
+          title="Tour & Travel"
+          des="I built a Tour and Travels website using React and Tailwind CSS. The website features destination listings, package details, and booking options. "
           src={projectThree}
         />
         <ProjectsCard
-          title="Coordinated a year-long release of a six-part platform
-project"
-          des="With PM's, marketing, BA, QA, and sales department."
+          title="Hotel Management"
+          des="I designed a Hotel Website using React and Tailwind CSS. The site includes sections for room listings, pricing details, and a booking form. "
           src={projectTwo}
         />
       </div>
